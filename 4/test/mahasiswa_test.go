@@ -14,14 +14,14 @@ func TestMahasiswa(t *testing.T) {
 			Kelas: "3KA21",
 		},
 		model.Mahasiswa{
-			NPM:   "19283746",
-			Nama:  "Doremi Budi",
-			Kelas: "4KA20",
+			NPM:   "52418987",
+			Nama:  "Haafidz Nurul Salim",
+			Kelas: "3IA23",
 		},
 		model.Mahasiswa{
-			NPM:   "44444444",
-			Nama:  "DoBud",
-			Kelas: "4KA21",
+			NPM:   "66666666",
+			Nama:  "Supardi",
+			Kelas: "3KA21",
 		},
 	}
 
@@ -53,7 +53,7 @@ func TestMahasiswa(t *testing.T) {
 	})
 
 	t.Run("Testing Get mahasiswa", func(t *testing.T) {
-		_, err := model.GetMahasiswa(db, "44444444")
+		_, err := model.GetMahasiswa(db, "66666666")
 		if err != nil {
 			t.Fatal(err)
 		}
